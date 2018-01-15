@@ -1,0 +1,45 @@
+{
+    "name": "haistudio/predictable-random",
+    "description": "Generates a predictable random number based on a starting seed.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "predictable-random"
+    ],
+    "support": {
+        "docs": "https://www.hai-studio.com",
+        "issues": "https://www.hai-studio.com"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Toft",
+            "homepage": "https://www.hai-studio.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.26"
+    },
+    "repositories": [
+        {
+            "packagist.org": false
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "haistudio\\predictablerandom\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Predictable Random",
+        "handle": "predictable-random",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://www.hai-studio.com"
+    }
+}
