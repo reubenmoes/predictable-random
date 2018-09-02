@@ -19,7 +19,7 @@ class TwigExtension extends \Twig_Extension
 {
 
     private $seed = 1;
-    
+
 
     // Public Methods
     // =========================================================================
@@ -52,17 +52,30 @@ class TwigExtension extends \Twig_Extension
     /**
      * Generate predictable random number
      *
-     * @param null $param
+     * @param null $paramA
+     * @param null $paramB
      *
      * @return string
      */
-    public function generateNumber($param = null)
+    public function generateNumber($paramA = null, $paramB = null)
     {
-        $min = $param[0];
-        $max = $param[1];
+        // This aint pretty -- I should probably refactor some day
+        if (is_array($paramA)){
+            $min = 0;
+            $max = count($paramA)-1;
+        } else if (is_numeric($paramA) && is_numeric($paramB)) {
+            $min = $paramA;
+            $max = $paramB;
+        }
 
         mt_srand($this->seed);
-        $result = mt_rand($min, $max);
+
+        if (is_array($paramA)){
+            $result = $paramA[mt_rand($min, $max)];
+        } else {
+            $result = mt_rand($min, $max);
+        }
+
         $this->seed++;
         srand();
 

@@ -2,8 +2,6 @@
 
 Generates a predictable random number based on a starting seed.
 
-![Screenshot](resources/img/plugin-logo.png)
-
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-beta.23 or later.
@@ -18,7 +16,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require /predictable-random
+        composer require haistudio/predictable-random
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Predictable Random.
 
@@ -28,7 +26,15 @@ To install the plugin, follow these instructions.
 
 ## Configuring Predictable Random
 
--Insert text here-
+Set a seed with:
+
+    {% do setPredictableRandomSeed(666) %}
+
+Then get a number with:
+    {% set number = predictableRandom(min, max) %}
+
+Or get a random value from an array of possible values:
+    {% set number = predictableRandom([value1, value2, value3]) %}
 
 ## Using Predictable Random
 
