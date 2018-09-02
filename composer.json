@@ -11,8 +11,8 @@
         "predictable-random"
     ],
     "support": {
-        "docs": "https://www.hai-studio.com",
-        "issues": "https://www.hai-studio.com"
+        "docs": "https://github.com/tobiastoft/predictable-random",
+        "issues": "https://github.com/tobiastoft/predictable-random/issues"
     },
     "license": "MIT",
     "authors": [
@@ -22,11 +22,11 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0.0-RC5"
+        "craftcms/cms": "~3.0.0"
     },
     "repositories": [
         {
-            "packagist.org": false
+            "packagist.org": true
         }
     ],
     "autoload": {
