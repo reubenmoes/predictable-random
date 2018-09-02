@@ -1,6 +1,6 @@
 # Predictable Random plugin for Craft CMS 3.x
 
-Generates a predictable random number based on a starting seed.
+Generates a predictable random number (or item in an array) based on a starting seed. For when you want things to seem random, but not really be random.
 
 ## Requirements
 
