@@ -24,16 +24,16 @@ To install the plugin, follow these instructions.
 
 Set a seed with:
 
-    {% do setPredictableRandomSeed(666) %}
+        {% do setPredictableRandomSeed(666) %}
 
 Get current seed value with:
-    {% do getPredictableRandomSeed() %}
+        {% do getPredictableRandomSeed() %}
 
 Get a random number within a range:
-    {% set number = predictableRandom(min, max) %}
+        {% set number = predictableRandom(min, max) %}
 
 Or get a random value from an array of possible values:
-    {% set number = predictableRandom([0,2,4,8,16,'bad','code']) %}
+        {% set number = predictableRandom([0,2,4,8,16,'bad','code']) %}
 
 
 ## Predictable Random Roadmap
