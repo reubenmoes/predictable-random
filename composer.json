@@ -2,7 +2,7 @@
     "name": "haistudio/predictable-random",
     "description": "Generates a predictable random number based on a starting seed.",
     "type": "craft-plugin",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "keywords": [
         "craft",
         "cms",
